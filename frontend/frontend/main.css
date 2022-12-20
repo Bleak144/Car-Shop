@@ -1,0 +1,315 @@
+@import url('https://fonts.googleapis.com/css2?family=Faustina&display=swap');
+
+:root {
+    --padding-deline: 8px;
+    --border-deline: 2px solid rgb(243, 232, 232);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+body {
+    color: black;
+    font-family: Faustina;
+    background-color: #111;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.container-header {
+    position: relative;
+    height: 98vh;
+    width: 100%;
+    color: white;
+    padding: 0px 8px;
+
+}
+
+
+
+/* Estilos del menu de navegacion */
+.nav {
+
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+
+.nav__logo {
+    width: 80px;
+    margin-right: 10px;
+
+}
+
+.figure__logo {
+    border: 10px !important;
+}
+
+.nav__container {
+    display: flex;
+    padding: var(--padding-deline);
+    border: var(--border-deline);
+    width: 100%;
+    display: flex;
+    align-items: center;
+    height: 60px;
+    gap: 40px;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    font-size: 1.2rem;
+
+}
+
+.nav__container input {
+    height: 45px;
+    width: 100%;
+    border-radius: 10px;
+    border: none;
+    border: var(--border-deline);
+    padding-left: 10px;
+
+
+
+}
+
+input {
+    font-size: 1.2rem;
+}
+
+.ul__links {
+    text-decoration: none;
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+
+.main {
+    height: 94vh;
+    display: grid;
+    place-items: center;
+
+}
+
+
+
+.main__crear_cuenta {
+    position: relative;
+    text-align: inherit;
+    padding: 30px;
+    width: 50%;
+    height: 825px;
+    border-radius: 90px;
+    background: #ecf0f3;
+    box-shadow: 14px 14px 20px #cbced1, -14px -14px 20px white;
+    min-height: min-content;
+    padding-left: 100px;
+    padding-right: 100px;
+    color: #000;
+
+}
+
+.icon {
+    border-radius: 50%;
+    width: 45%;
+    margin: auto;
+    box-sizing: border-box;
+    box-shadow: 7px 7px 10px #cbced1, -7px -7px 10px white;
+}
+
+.titulo-justy {
+    margin-top: 10px;
+    font-weight: 900;
+    font-size: 1.8rem;
+    color: purple;
+    letter-spacing: 1px;
+}
+
+.form__login {
+    display: flex;
+    height: 250px;
+    flex-direction: column;
+    margin: 26px 0px;
+    width: 100%;
+    font-size: 1rem;
+
+
+}
+
+.form__login input {
+
+    position: relative;
+    height: 50px !important;
+    border: var(--border-deline);
+    margin-bottom: 20px;
+    border-radius: 10px;
+
+
+}
+
+.form__btn {
+    width: 70%;
+    height: 70px;
+    margin-bottom: 50px;
+    align-self: center;
+    border-radius: 10px;
+    font-size: 1.4rem;
+
+
+
+}
+
+.btn__primary {
+    background-color: plum;
+    color: black;
+    font-weight: bold;
+
+}
+
+.btn__secondary {
+    border: none;
+}
+
+.justy {
+    width: 100%;
+    text-align: center;
+    color: black;
+}
+
+.form__btn,
+li {
+    cursor: pointer;
+}
+
+
+
+
+.form__cuenta {
+    margin-top: 30px;
+}
+
+.main__completar {
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+
+.form__main {
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 76px;
+    gap: 16px;
+
+}
+
+.form__secondary {
+    display: flex;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    gap: 16px;
+
+
+}
+
+.main__crear_cuenta p {
+    font-size: 0.7rem;
+}
+
+.main__crear_cuenta input {
+    width: 100%;
+    height: 40px;
+    padding-left: 4px;
+    border-radius: 10px;
+
+}
+
+.form__cuenta__submit {
+    text-align: center;
+
+}
+
+.form__cuenta__submit fo.form__btn {
+    width: 200px;
+    background-color: plum;
+    height: 40px;
+}
+
+
+.form__btn:hover {
+    background-color: rgb(231, 231, 231);
+}
+
+
+
+.form__btn {
+    font-family: Faustina;
+    transition: 0.5s;
+    text-align: center;
+    color: white;
+    background-color: rgb(112, 0, 187);
+
+    box-shadow: 8px 8px 12px rgba(0, 0, 0, 0.178),
+        -8px -8px 12px rgba(255, 255, 255, 0.103);
+    border-radius: 30px;
+    cursor: pointer;
+    letter-spacing: 5px;
+
+
+    border-color: rgb(89, 0, 148);
+    border-width: 1.5px;
+}
+
+.form__btn:hover {
+    transition: 0.5s;
+    color: #3E0067;
+    box-shadow: 8px 8px 12px rgba(0, 0, 0, 0.089),
+        -8px -8px 12px rgba(255, 255, 255, 0.055),
+        inset 5px 5px 5px rgba(0, 0, 0, 0.205);
+    background-color: rgb(89, 0, 148);
+}
+
+
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    max-width: 100%;
+    z-index: 1;
+    flex-direction: row-reverse;
+    align-content: flex-start;
+}
+
+.container {
+    position: relative;
+    height: 0;
+    width: 100%;
+}
+
+.square {
+    background-color: #1d1d1d;
+    box-shadow: 0 0 2px #000;
+    height: 16px;
+    width: 16px;
+    margin: 2px;
+    transition: 1s ease;
+}
+
+.square:hover {
+    transition-duration: 0s;
+}
